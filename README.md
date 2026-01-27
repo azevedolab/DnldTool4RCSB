@@ -1,5 +1,8 @@
 # DnldTool4RCSB: Download Tool for RCSB Structure
 This Python script downloads files (PDB and SDF) with atomic coordinates from the Protein Data Bank. It reads the HTML RCSB page to scrape data related to the identification of the active ligand. It focuses on structures for which binding affinity data is available. The active ligand is a small molecule bound to a protein target for which binding is available ([de Azevedo et al., 2024](https://doi.org/10.1002/jcc.27449)). It employs a requests library for downloading the atomic coordinates from the RCSB ([Veit-Acosta & de Azevedo, 2021](https://doi.org/10.2174/0929867328666210210121320)).
+<br><a href="https://colab.research.google.com/drive/1oKMThoHQ63jB2k6IpjrLccNKo5bOgJ8_?usp" title = "Link to Google Colab">
+<img src="https://drive.usercontent.google.com/download?id=1WZ2ekqOvOilsl-zJAZjjw3MRVxvkqSzp&export=view&authuser=0" width=180 alt="Link to Google Colab" ></a><br>
+<br> </br>
 <br> </br>
 <img src="https://drive.usercontent.google.com/download?id=1SpdLWV1K6Qtv0kvnRqdc3jc25mL0Vol_&export=view&authuser=0" width=600 alt="DnldTool4RCSB Flowchart">
 <br><i>Schematic flowchart for DnldTool4RCSB. It reads input files (lig.in, par.in, and pdb_codes.in) and downloads PDB and SDF from the Protein Data Bank for which binding affinity data (e.g., K<sub>i</sub>) is available. DnldTool4RCSB reads pdb_codes.in to define the PDB file to be downloaded from the Protein Data Bank. Input files lig.in and par.in define the folders used for downloading and the binding affinity. DnldTool4RCSB also downloads the SDF for the active ligand in the structure.</i></br>
