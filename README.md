@@ -1,6 +1,6 @@
 <H1>DnldTool4RCSB: Download Tool for RCSB</H1>
 <a href="https://colab.research.google.com/drive/1oKMThoHQ63jB2k6IpjrLccNKo5bOgJ8_?usp" title = "Link to Google Colab">
-<img src="https://drive.usercontent.google.com/download?id=1KdXA4TI3bdnMiXc-dzU99u6s7uMVPgTD&export=view&authuser=0" height=24 alt="Link to Google Colab"></a> 
+<img src="https://drive.usercontent.google.com/download?id=1KdXA4TI3bdnMiXc-dzU99u6s7uMVPgTD&export=view&authuser=0" height=24 alt="Link to Google Colab"></a>  
 <a href="https://github.com/azevedolab/DnldTool4RCSB/blob/main/Source/dnldtool4rcsb.ipynb" title = "Link to Jupyter Notebook">
 <img src="https://drive.usercontent.google.com/download?id=1A4v8xBvC0Na-2Gdi3a5J4l6r0VOki9rK&export=view&authuser=0" height=24 alt="Link to Jupyter Notebook"></a>
 
