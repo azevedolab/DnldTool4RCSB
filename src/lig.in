@@ -1,0 +1,94 @@
+###########################################################################
+# Dictionary for ligand-related information                               #
+###########################################################################
+{
+    "binfo":
+    {
+    "remove_entries_with_missing_pairwise_terms":True,				# Boolean variable to indicate a request for removing structures (ligands) with missing pairwise terms
+    "addhs2lig":True,								# Boolean variable to indicate a request for adding hydrogen atoms to ligands
+    "rdkit_descriptors_flag":True,						# Boolean variable to indicate a request for calculating descriptors using RDKit
+    "rdkit_descriptors_csv":"rdkit_descriptors.csv",				# CSV file to store calculated descriptors using RDKit for each structure/ligand
+    "csv_binding":"binding.csv",						# Output CSV file for binding affinity data and pairwise terms	
+    "rmsd_csv":"rmsd_all.csv",							# CSV file for scores calculated for redocking results
+    "xtal_csv":"xtal_all.csv",							# CSV file for scores calculated xtal structures
+    "csv_bind_poses":"binding.csv",						# Output CSV file for poses and binding affinity data
+    "csv_bind_xtals":"binding_xtals.csv",					# CSV file for crystal structures and binding affinity data
+    "csv_curr_xtal":"lig_terms.csv",						# Output CSV file for current crystal structure and binding affinity 
+    "binding_source":"PDB",							# Source of binding affinity data (PDB or BDB)
+    "ligand_datafile":"ligdata.csv",						# CSV file with ligand data (PDB,Ligand,Chain,Number)
+    "binding_datafile":"binddata.csv",						# CSV file with binding affinity data for ligands
+    "average_scheme":True, 							# True to take average values
+    "pdb_label":"PDB", 								# Label used to identify column with PDB access codes
+    "lig_label":"Ligand", 							# Labels used to identify column with ligand codes
+    "bind_in":"Ki",                 						# Binding affinity
+    "IC50_header":"IC50(nM),log(IC50),pIC50,",					# Labels for IC50
+    "Kd_header":"Kd(nM),log(Kd),pKd,",						# Labels for Kd
+    "Ki_header":"Ki(nM),log(Ki),pKi,",						# Labels for Ki
+    "sorting_criterion4bind":"Affinity(kcal/mol)",				# Sorting criterion for binding affinity
+    "ligand_labels":["PDB","Ligand","Chain","Number"],				# Ligand labels
+    "pairwise_terms2add":["gauss1","gauss2","repulsion","hydrophobic",
+                          "hydrogen","torsional"],				# List of pairwise terms used to build additional features
+    "scheme1_gauss1":[1,2,6,1],							# Limits defining expoents for looping through [denominator, lowest_limit, upper_limit, and step]
+    "scheme2_gauss1":[1,2,6,1],							# Limits defining expoents for looping through [numerator, lowest_limit, upper_limit, and step]
+    "scheme1_gauss2":[1,2,6,1],							# Limits defining expoents for looping through [denominator, lowest_limit, upper_limit, and step]
+    "scheme2_gauss2":[1,2,6,1],							# Limits defining expoents for looping through [numerator, lowest_limit, upper_limit, and step]
+    "scheme1_repulsion":[10,2,9,1],						# Limits defining expoents for looping through [denominator, lowest_limit, upper_limit, and step]
+    "scheme2_repulsion":[10,8,9,1],						# Limits defining expoents for looping through [numerator, lowest_limit, upper_limit, and step]
+    "scheme1_hydrophobic":[1,2,6,1],						# Limits defining expoents for looping through [denominator, lowest_limit, upper_limit, and step]
+    "scheme2_hydrophobic":[1,2,6,1],						# Limits defining expoents for looping through [numerator, lowest_limit, upper_limit, and step]
+    "scheme1_hydrogen":[1,2,6,1],						# Limits defining expoents for looping through [denominator, lowest_limit, upper_limit, and step]
+    "scheme2_hydrogen":[1,2,6,1],						# Limits defining expoents for looping through [numerator, lowest_limit, upper_limit, and step]
+    "scheme1_torsional":[1,2,6,1],						# Limits defining expoents for looping through [denominator, lowest_limit, upper_limit, and step]
+    "scheme2_torsional":[1,2,6,1],						# Limits defining expoents for looping through [numerator, lowest_limit, upper_limit, and step]
+    "features4gauss1":[
+		"Gauss1(kcal/mol)","Gauss1(FIE)",
+		"Gauss1(FTIE)","Gauss1(TFE)",
+		"Gauss1(USE)"],							# Features added for Gauss1
+    "features4gauss2":[
+		"Gauss2(kcal/mol)","Gauss2(FIE)",
+		"Gauss2(FTIE)","Gauss2(TFE)",
+		"Gauss2(USE)"],							# Features added for Gauss2
+    "features4repulsion":[
+		"Repulsion(kcal/mol)","Repulsion(FIE)",
+		"Repulsion(FTIE)",
+		"Repulsion(USE)"],						# Features added for Repulsion
+    "features4hydrophobic":[
+		"Hydrophobic(kcal/mol)","Hydrophobic(FIE)",
+		"Hydrophobic(FTIE)","Hydrophobic(TFE)",
+		"Hydrophobic(USE)"],						# Features added for Hydrophobic
+    "features4hydrogen":[
+		"Hydrogen(kcal/mol)","Hydrogen(FIE)",
+		"Hydrogen(FTIE)","Hydrogen(TFE)",
+		"Hydrogen(USE)"],						# Features added for Hydrogen
+    "features4torsional":[
+		"Torsional(kcal/mol)","Torsional(FIE)",
+		"Torsional(FTIE)","Torsional(TFE)",
+		"Torsional(USE)"],						# Features added for Torsional
+    "pair_labels":[
+		"Gauss1(kcal/mol)","Gauss1(FIE)",
+		"Gauss1(FTIE)","Gauss1(TFE)",
+		"Gauss1(USE)",
+		"Gauss2(kcal/mol)","Gauss2(FIE)",
+		"Gauss2(FTIE)","Gauss2(TFE)",
+		"Gauss2(USE)",
+		"Repulsion(kcal/mol)","Repulsion(FIE)",
+		"Repulsion(FTIE)","Repulsion(TFE)",
+		"Repulsion(USE)",
+		"Hydrophobic(kcal/mol)","Hydrophobic(FIE)",
+		"Hydrophobic(FTIE)","Hydrophobic(TFE)",
+		"Hydrophobic(USE)",
+		"Hydrogen(kcal/mol)","Hydrogen(FIE)",
+		"Hydrogen(FTIE)","Hydrogen(TFE)",
+		"Hydrogen(USE)",
+		"Torsional(kcal/mol)","Torsional(FIE)",
+		"Torsional(FTIE)","Torsional(TFE)",
+		"Torsional(USE)",
+		"Torsional(Log)",
+		"Affinity(kcal/mol)","Affinity(FIE)",
+		"Affinity(FTIE)","Affinity(TFE)",
+		"Affinity(USE)"],
+    "docking_labels":"PDB,PDBQT,RMSD(A),affinity(kcal/mol),rmsd l.b.(A),rmsd u.b.(A),",
+    "binding_labels":"PDB,Ligand,Chain,Number,Ki(nM),log(Ki),pKi,PDBQT,RMSD(A),rmsd l.b.(A),rmsd u.b.(A),"
+    }
+
+    }
