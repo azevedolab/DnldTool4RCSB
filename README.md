@@ -4,7 +4,7 @@
 <a href="https://github.com/azevedolab/DnldTool4RCSB/blob/main/src/dnldtool4rcsb.ipynb" title = "Link to Jupyter Notebook">
 <img src="https://drive.usercontent.google.com/download?id=1A4v8xBvC0Na-2Gdi3a5J4l6r0VOki9rK&export=view&authuser=0" height=24 alt="Link to Jupyter Notebook"></a>
 
-This Jupyter Notebook (<a href="https://github.com/azevedolab/DnldTool4RCSB/blob/main/src/dnldtool4rcsb.ipynb" title="Link to Jupyter Notebook">dnldtool4rcsb.ipynb</a>) downloads files (PDB and SDF) with atomic coordinates from the Protein Data Bank. It reads the HTML RCSB page to scrape data related to the identification of the active ligand. It focuses on structures for which binding affinity data is available. The active ligand is a small molecule bound to a protein target for which binding is available ([de Azevedo et al., 2024](https://doi.org/10.1002/jcc.27449)). It employs a requests library for downloading the atomic coordinates from the RCSB ([Veit-Acosta & de Azevedo, 2021](https://doi.org/10.2174/0929867328666210210121320)).
+This Jupyter Notebook (<a href="https://github.com/azevedolab/DnldTool4RCSB/blob/main/src/dnldtool4rcsb.ipynb" title="Link to Jupyter Notebook">dnldtool4rcsb.ipynb</a>) downloads files (PDB and SDF) with atomic coordinates from the Protein Data Bank. It reads the HTML RCSB page to scrape data related to the identification of the active ligand. It focuses on structures for which binding affinity data is available. The active ligand is a small molecule bound to a protein target for which binding is available ([de Azevedo et al., 2024](https://doi.org/10.1002/jcc.27449)). It employs the [Requests HTTP library](https://requests.readthedocs.io/en/latest/) for downloading the atomic coordinates from the RCSB ([Veit-Acosta & de Azevedo, 2021](https://doi.org/10.2174/0929867328666210210121320)).
 <br> </br>
 <img src="https://drive.usercontent.google.com/download?id=1SpdLWV1K6Qtv0kvnRqdc3jc25mL0Vol_&export=view&authuser=0" width=400 alt="DnldTool4RCSB Flowchart">
 <P>
@@ -50,7 +50,7 @@ PDB file. It intends to select target coordinates for docking simulations.
 **make_a_dir**: This function makes a directory in the content folder.
 <br> </br>
 <br> </br>
-Requests library docs available at https://requests.readthedocs.io/en/latest/.
+Requests HTTP library docs available at https://requests.readthedocs.io/en/latest/.
 
 To install the requests library, type the following command.
 
