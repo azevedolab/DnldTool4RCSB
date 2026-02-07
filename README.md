@@ -53,10 +53,8 @@ PDB file. It intends to select target coordinates for docking simulations.
 Requests HTTP library docs available at https://requests.readthedocs.io/en/latest/.
 
 To install the requests library, type the following command. 
-
-python -m pip install requests
+<pre><i>python -m pip install requests</i></pre>
 <br> </br>
-
 **References**
 <br> </br>
 de Azevedo WF Jr, Quiroga R, Villarreal MA, da Silveira NJF, Bitencourt-Ferreira
