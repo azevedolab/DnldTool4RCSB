@@ -104,4 +104,3 @@ Umberto Eco. Source: <a href = "https://quoteinvestigator.com/2024/03/21/social-
 <br> </br>
 "Let the light of science end the darkness of denialism." My quote (<a href = "https://doi.org/10.2174/092986732838211207154549" title = "DOI:10.2174/092986732838211207154549">DOI:10.2174/092986732838211207154549</a>). 
 <br> </br>
-
